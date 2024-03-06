@@ -1,0 +1,561 @@
+{
+	"info": {
+		"_postman_id": "ae687a3b-c1af-44b8-a1af-362a3619475a",
+		"name": "Realm Logostics",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Register",
+			"request": {
+				"auth": {
+					"type": "bearer"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "waqar",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "abdulwaqar4@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						},
+						{
+							"key": "c_password",
+							"value": "123456",
+							"type": "text"
+						},
+						{
+							"key": "role",
+							"value": "2",
+							"description": "Doc=2,patient=3,",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://realmlogostics.coderoids.pk/api/register",
+					"protocol": "http",
+					"host": [
+						"realmlogostics",
+						"coderoids",
+						"pk"
+					],
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Register",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "waqar",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "abdulwaqar4@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "text"
+								},
+								{
+									"key": "c_password",
+									"value": "123456",
+									"type": "text"
+								},
+								{
+									"key": "role",
+									"value": "2",
+									"description": "Doc=2,patient=3,",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "espitalia-healthcare.test/api/register",
+							"host": [
+								"espitalia-healthcare",
+								"test"
+							],
+							"path": [
+								"api",
+								"register"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sun, 13 Feb 2022 15:18:11 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.47 (Win64) OpenSSL/1.1.1i PHP/7.4.14"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.14"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "58"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Length",
+							"value": "133"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"data\": {\n        \"token\": \"6|synPFDeNiWdMd2YSy4K6TslapGx7aLNuvRExhk6J\",\n        \"name\": \"waqar\"\n    },\n    \"message\": \"User register successfully.\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Login",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "abdulwaqar4@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://realmlogostics.coderoids.pk/api/login",
+					"protocol": "http",
+					"host": [
+						"realmlogostics",
+						"coderoids",
+						"pk"
+					],
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "abdulwaqar4@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "espitalia-healthcare.test/api/login",
+							"host": [
+								"espitalia-healthcare",
+								"test"
+							],
+							"path": [
+								"api",
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sun, 13 Feb 2022 14:50:29 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.47 (Win64) OpenSSL/1.1.1i PHP/7.4.14"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.14"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "58"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Length",
+							"value": "130"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"data\": {\n        \"token\": \"3|d5D9pxLMVEn5xEoys4Yw1Aqk2AazvOGMUbmABJZx\",\n        \"name\": \"waqar\"\n    },\n    \"message\": \"User login successfully.\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Logout",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "3|kJVQAOrfpxlMxdUKRXTPKBSclOVfCheQhJlPY3uj",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "4|8m23RdQpSMqPAp4clypgg2ra8M6XB1yqrYbvQ8ed",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://realmlogostics.coderoids.pk/api/logout",
+					"protocol": "http",
+					"host": [
+						"realmlogostics",
+						"coderoids",
+						"pk"
+					],
+					"path": [
+						"api",
+						"logout"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Logout",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "4|8m23RdQpSMqPAp4clypgg2ra8M6XB1yqrYbvQ8ed",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "espitalia-healthcare.test/api/logout",
+							"host": [
+								"espitalia-healthcare",
+								"test"
+							],
+							"path": [
+								"api",
+								"logout"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sun, 13 Feb 2022 15:16:11 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.47 (Win64) OpenSSL/1.1.1i PHP/7.4.14"
+						},
+						{
+							"key": "Vary",
+							"value": "Authorization"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.14"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Length",
+							"value": "25"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "\"Successfully logged out\""
+				}
+			]
+		},
+		{
+			"name": "UploadDoc",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "48|512nSM73SIgAEpeaOAeOUvHTwcHfnhf6Ni8nEwvt",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "user_id",
+							"value": "1",
+							"type": "default"
+						},
+						{
+							"key": "profile_img",
+							"type": "file",
+							"src": "/C:/Users/abdul/Desktop/download.png"
+						},
+						{
+							"key": "doc_type",
+							"value": "2",
+							"description": "1->img , 2->doc",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://realmlogostics.coderoids.pk/api/profile_update",
+					"protocol": "http",
+					"host": [
+						"realmlogostics",
+						"coderoids",
+						"pk"
+					],
+					"path": [
+						"api",
+						"profile_update"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "UploadDoc",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "profile_img",
+									"type": "file",
+									"src": "/C:/Users/abdul/Desktop/download.png"
+								},
+								{
+									"key": "doc_type",
+									"value": "2",
+									"description": "1->img , 2->doc",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://realmlogostics.coderoids.pk/api/profile_update",
+							"protocol": "http",
+							"host": [
+								"realmlogostics",
+								"coderoids",
+								"pk"
+							],
+							"path": [
+								"api",
+								"profile_update"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "x-powered-by",
+							"value": "PHP/7.4.29"
+						},
+						{
+							"key": "cache-control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json"
+						},
+						{
+							"key": "x-ratelimit-limit",
+							"value": "60"
+						},
+						{
+							"key": "x-ratelimit-remaining",
+							"value": "59"
+						},
+						{
+							"key": "access-control-allow-origin",
+							"value": "*"
+						},
+						{
+							"key": "content-length",
+							"value": "40"
+						},
+						{
+							"key": "content-encoding",
+							"value": "br"
+						},
+						{
+							"key": "vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "date",
+							"value": "Mon, 13 Jun 2022 19:08:07 GMT"
+						},
+						{
+							"key": "server",
+							"value": "LiteSpeed"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"User Document uploaded.\"\n}"
+				}
+			]
+		}
+	]
+}
